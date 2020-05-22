@@ -14,13 +14,16 @@
     </a>
     <ul>
       <li>
-        <div><img src="img/icon-search.svg" width="17" height="17" alt="">Поиск</div>
+        <div>
+          <img src="img/icon-search.svg" width="17" height="17" alt="">
+          <input type="search" name="search" id="search" placeholder="Поиск">
+        </div>
       </li>
       <li>
         <a href="blank.html"><img src="img/icon-bookmark.svg" width="14" height="16" alt="">Закладки</a>
       </li>
       <li>
-        <a href="blank.html"><img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина</a>
+        <a href="blank.html"><img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина:0</a>
       </li>
       <li>
         <a href="blank.html">Оформить заказ</a>
@@ -37,8 +40,8 @@
     <h2>Личный кабинет</h2>
     <ul>
       <li>
-        <img src="img/icon-login.svg" width="20" height="17" alt="Войти">
-        <a href="blank.html">Вход</a>
+        <img src="img/icon-login.svg" width="20" height="17" alt="Вход">
+        <a href="blank.html">Войти</a>
       </li>
       <li>
         <a href="blank.html">Регистрация</a>
@@ -222,6 +225,33 @@
     <img src="img/map.png" width="300" height="158" alt="адрес Большая Конюшенная ул. д.17">
     <p><button type="button">Заблудились? Напишите нам!</button></p>
   </section>
+
+  <section>
+    <h2>Как проехать?</h2>
+   <img src="img/big-map.png" width="943" height="449" alt="адрес Большая Конюшенная ул. д.17">
+    <button type="button">
+     <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
+    </button>
+  </section>
+
+  <section>
+    <h2>Напишите нам!</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+      </p>
+        <p>
+          <label for="comment">Текст письма:</label><br>
+          <textarea name="comment" id="comment" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+      <button type="submit">Отправить</button>
+
+    </form>
+  </section>
+
 
 </main>
 
