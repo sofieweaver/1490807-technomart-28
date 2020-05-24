@@ -79,19 +79,31 @@
     <div>
       <p>Сортировка</p>
       <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По функционалу</li>
+        <li>
+          <button type="button">По цене</button>
+        </li>
+        <li>
+          <button type="button">По типу</button>
+        </li>
+        <li>
+          <button type="button">По функционалу</button>
+        </li>
       </ul>
     </div>
     
     <div>
       <p>Цена</p>
-      <img src="img/filter-button.svg" width="20" height="22" alt="Фильтр">0
-      </p>
-      <p>
-        <img src="img/filter-button.svg" width="20" height="22" alt="Фильтр">30000
-      </p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          0 <input type="range" min="0" max="30000" step="10"> 30000
+          <img src="img/filter-button.svg" width="20" height="22" alt="Фильтр">
+          <img src="img/filter-button.svg" width="20" height="22" alt="Фильтр">
+        </fieldset>
+        <fieldset>
+          <input name="number" id="start-price" value="0">
+          <input name="number" id="end-price" value="30000">
+        </fieldset>
+    </form>
     </div>
 
     <div>
