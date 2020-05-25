@@ -84,59 +84,75 @@
 </header>
 
 <main>
-
   <section>
     <h2 class="visually-hidden">Мы предлагаем</h2>
-    <ul>
-      <li>
-        <div>
-          <input type="radio" name="slider" id="slider-1" checked>
-          <figure>
-            <img src="img/worker.jpg" width="620" height="266" alt="Перфораторы">
-            <figcaption>
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-            </figcaption>
-          </figure>
-          <a href="catalog.html">Открыть каталог</a>
-        </div>
-        <div>
-          <input type="radio" name="slider" id="slider-2">
-          <figure>
-            <img src="img/worker2.jpg" width="620" height="266" alt="Дрели">
-            <figcaption>
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-            </figcaption>
-          </figure>
-          <a href="blank.html">Открыть каталог</a>
-        </div>
-      <li>
-        <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
-        <h3>Материалы</h3>
-        <a href="blank.html">На любой вкус</a>
-        <p>New</p></li>
-      <li>
-        <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
-        <h3>Инструмент</h3>
-        <a href="blank.html">На все случаи</a>
-      </li>
-      <li>
-        <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
-        <h3>Техника</h3>
-        <a href="blank.html">Для стройки</a>
-      </li>
-      <li>
-        <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
-        <h3>Скидки 50%</h3>
-        <a href="blank.html">На 350 товаров</a>
-      </li>
-      <li>
-        <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
-        <h3>Доставка</h3>
-        <a href="blank.html">Бесплатно</a>
-      </li>
-    </ul>
+    <div>
+      <ul>
+        <li>
+          <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
+          <h3>Материалы</h3>
+          <a href="blank.html">На любой вкус</a>
+          <p>New</p>
+        </li>
+        <li>
+          <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
+          <h3>Инструмент</h3>
+          <a href="blank.html">На все случаи</a>
+        </li>
+        <li>
+          <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
+          <h3>Техника</h3>
+          <a href="blank.html">Для стройки</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div>
+      <div>
+        <label for="slider-1"></label>
+        <input type="radio" name="slider" id="slider-1" checked>
+        <label for="slider-2"></label>
+        <input type="radio" name="slider" id="slider-2">
+        <input type="image" src="img/icon-left.svg" width="22" height="40" alt="Вперед">
+        <input type="image" src="img/icon-left.svg" width="22" height="40" alt="Назад">
+        <ul>
+          <li>
+            <figure>
+              <img src="img/worker.jpg" width="620" height="266" alt="Перфораторы">
+              <figcaption>
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </figcaption>
+            </figure>
+            <a href="catalog.html">Открыть каталог</a>
+          </li>
+          <li>
+            <figure>
+              <img src="img/worker2.jpg" width="620" height="266" alt="Дрели">
+              <figcaption>
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+              </figcaption>
+            </figure>
+            <a href="blank.html">Открыть каталог</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
+            <h3>Скидки 50%</h3>
+            <a href="blank.html">На 350 товаров</a>
+          </li>
+          <li>
+            <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
+            <h3>Доставка</h3>
+            <a href="blank.html">Бесплатно</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -292,7 +308,9 @@
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
     <img src="img/map.png" width="300" height="158" alt="адрес Большая Конюшенная ул. д.17">
-    <p><button type="button">Заблудились? Напишите нам!</button></p>
+    <p>
+      <button type="button">Заблудились? Напишите нам!</button>
+    </p>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="name">Ваше имя:</label>
@@ -317,8 +335,6 @@
     <button type="button">
      <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
     </button>
-  </section>
-
   </section>
 
 </main>
