@@ -2,6 +2,7 @@
     --basic-black: #000000;
     --basic-red: #EE3643;
     --basic-green: #63A63E;
+    --basic-darkblue: #32425C;
     --basic-grey: #3D546F;
     --basic-greylight: #C5C5C5;
     --basic-background: #F1F5F7;
@@ -17,6 +18,8 @@
     --attention: #FFBF47;
     --error: #BA2732;
     --special-grey: #EAEAEA;
+
+    --darkblue-background: #293449;
     
 }
 
@@ -24,11 +27,12 @@ body {
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: 'Cuprum', Arial, sans-serif;
+    font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
-    font-weight: 400px;
+    font-weight: 400;
     color: var(--basic-black);
+    text-transform: none;
     background-color: var(--basic-white)
     
 }
@@ -41,3 +45,111 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.visually-hidden {
+    display: none;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.header-up,
+.footer-down {
+    background-color: var(--darkblue-background);
+}
+
+
+.header-up,
+.main-navigation {
+    font-size: 18px;
+    color: var(--basic-white);
+}
+
+.navigation-panel img {
+    opacity: 0.3;
+}
+
+.navigation-panel img:hover {
+    opacity: 1;
+}
+
+.navigation-panel,
+.user-account,
+.features-navigation,
+.footer-navigation,
+.footer-features-list,
+.social-media {
+    list-style: none;
+}
+
+.header-up a,
+.features-navigation a {
+    color: var(--basic-white);
+}
+
+.main-navigation,
+.footer-up {
+    background-color: var(--basic-darkblue);
+}
+
+.navigation-panel a:active {
+    opacity: 0.5;
+}
+
+.navigation-panel img:active {
+    opacity: 0.3;
+}
+
+.header-info,
+.main-navigation {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.header-info p {
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 18px;
+}
+
+.header-info a {
+    font-size: 21px;
+    font-style: bold;
+    color: var(--basic-red);
+}
+
+
+.header-info span {
+    color: var(--basic-darkblue);
+    font-size: 14px;
+}
+
+.user-account a {
+    color: var(--basic-black);
+    font-size: 21px;
+}
+
+.user-account a:hover,
+.user-account a:focus {
+    color: var(--basic-red);
+}
+
+.user-account a:active{
+    color: var(--basic-greylight);
+}
+
+.main-navigation {
+    background-color: var(--basic-darkblue);
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    background-color: var(--darkblue-background);
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
