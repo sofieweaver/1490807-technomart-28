@@ -112,16 +112,22 @@ img {
     color: var(--basic-red);
     font-style: italic;
     font-size: 18px;
+    line-height: 23px;
 }
 
-.header-info a {
+.header-contacts {
+    text-align: center;
+}
+
+.header-contacts a {
     font-size: 21px;
     font-style: bold;
+    line-height: 30px;
     color: var(--basic-red);
 }
 
 
-.header-info span {
+.header-contacts span {
     color: var(--basic-darkblue);
     font-size: 14px;
 }
@@ -129,6 +135,7 @@ img {
 .user-account a {
     color: var(--basic-black);
     font-size: 21px;
+    line-height: 21px;
 }
 
 .user-account a:hover,
@@ -149,12 +156,8 @@ img {
     background-color: var(--darkblue-background);
 }
 
-.main-title {
-    font-size: 30px;
-    line-height: 30px;
-}
-
-.main-title {
+.main-title,
+.contacts-title {
     font-family: 'Cuprum', sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -168,7 +171,31 @@ img {
 
 .about-section a {
     font-size: 14px;
+    line-height: 18px;
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: var(--basic-red);
 }
+
+button {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    border: none;
+}
+
+.button:active {
+  background-color: var(--error);
+}
+
+.contact-us-form,
+.map-popup {
+    display: none;
+}
+
+
+
