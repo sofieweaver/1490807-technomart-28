@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -109,14 +111,12 @@
     
     <div>
       <div>
-        <label for="slider-1"></label>
-        <input type="radio" name="slider" id="slider-1" checked>
-        <label for="slider-2"></label>
-        <input type="radio" name="slider" id="slider-2">
-        <input type="image" src="img/icon-left.svg" width="22" height="40" alt="Вперед">
-        <input type="image" src="img/icon-left.svg" width="22" height="40" alt="Назад">
-        <ul>
-          <li>
+        <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-1" checked>
+        <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-2">
+        <img src="img/icon-left.svg" width="22" height="40" alt="Вперед">
+        <img src="img/icon-left.svg" width="22" height="40" alt="Назад">
+        <ul class="slider-content">
+          <li class="slider-item">
             <figure>
               <img src="img/worker.jpg" width="620" height="266" alt="Перфораторы">
               <figcaption>
@@ -126,7 +126,7 @@
             </figure>
             <a href="catalog.html">Открыть каталог</a>
           </li>
-          <li>
+          <li class="slider-item">
             <figure>
               <img src="img/worker2.jpg" width="620" height="266" alt="Дрели">
               <figcaption>
@@ -137,7 +137,16 @@
             <a href="blank.html">Открыть каталог</a>
           </li>
         </ul>
+        <div class="slider-controller">
+          <label for="slider-1">
+            <img src="img/icon-left.svg" width="22" height="40" alt="Вперед">
+          </label>
+          <label for="slider-2">
+            <img src="img/icon-left.svg" width="22" height="40" alt="Назад">
+          </label>
+        </div>
       </div>
+      
       <div>
         <ul>
           <li>
