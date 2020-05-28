@@ -46,6 +46,17 @@ img {
     height: auto;
 }
 
+button {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    border: none;
+}
+
 .visually-hidden {
     display: none;
 }
@@ -266,21 +277,11 @@ img {
     background-color: var(--basic-red);
 }
 
-button {
-    font-family: 'Cuprum', sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: var(--basic-white);
-    text-transform: uppercase;
-    border: none;
-}
-
 .contact-us-button {
     background-color: var(--basic-red);
 }
 
-.contact-us-button {
+.contact-us-button:active {
   background-color: var(--error);
 }
 
@@ -299,6 +300,10 @@ button {
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
+}
+
+section.filter-section {
+    width: 220px;
 }
 
 .breadcrumps a,
@@ -341,6 +346,7 @@ button {
 
 .old-price {
     color: #A9A9A9;
+    text-decoration: line-through;
 }
 
 .current-price {
@@ -368,8 +374,8 @@ button {
 }
 
 .footer-up {
-    margin: 0;
     font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
     font-size: 18px;
     color: var(--basic-white);
 }
@@ -397,6 +403,7 @@ button {
 
 .footer-down {
     font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: var(--basic-white);
     line-height: 18px;
