@@ -92,7 +92,8 @@ img {
 }
 
 .navigation-panel,
-.user-account,
+.user-login,
+.profile-links,
 .features-navigation,
 .footer-navigation-panel,
 .footer-features-list,
@@ -140,6 +141,10 @@ img {
     opacity: 0.3;
 }
 
+.order-submission {
+    background-color: var(--basic-green);
+}
+
 .header-info,
 .main-navigation {
     margin-left: 130px;
@@ -175,20 +180,36 @@ img {
     text-align: right;
 }
 
-.user-account a {
+.user-login a {
     color: var(--basic-black);
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-white);
 }
 
-.user-account a:hover,
-.user-account a:focus {
+.user-login a:hover,
+.user-login a:focus {
     color: var(--basic-red);
 }
 
-.user-account a:active{
+.user-login a:active{
     color: var(--basic-greylight);
+}
+
+.profile-button {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.profile-links {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.profile-links a {
+    color: var(--basic-darkblue);
 }
 
 .main-navigation {
