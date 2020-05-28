@@ -95,6 +95,10 @@ img {
 .user-login,
 .profile-links,
 .features-navigation,
+.breadcrumps,
+.manufacturer-list,
+.power-list,
+.catalog-list,
 .footer-navigation-panel,
 .footer-features-list,
 .social-media {
@@ -203,6 +207,10 @@ img {
     background-color: var(--basic-white);
 }
 
+.profile-button:active {
+    color: var(--basic-greylight);
+}
+
 .profile-links {
     font-size: 18px;
     line-height: 18px;
@@ -210,6 +218,15 @@ img {
 
 .profile-links a {
     color: var(--basic-darkblue);
+}
+
+.profile-links a:hover,
+.profile-links a:focus {
+    color: var(--basic-red);
+}
+
+.profile-links a:active {
+    color: var(--basic-greylight);
 }
 
 .main-navigation {
@@ -226,7 +243,8 @@ img {
 }
 
 .main-title,
-.contacts-title {
+.contacts-title,
+.catalog-title {
     font-family: 'Cuprum', sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -255,11 +273,14 @@ button {
     text-align: center;
     color: var(--basic-white);
     text-transform: uppercase;
-    background-color: var(--basic-red);
     border: none;
 }
 
-.button:active {
+.contact-us-button {
+    background-color: var(--basic-red);
+}
+
+.contact-us-button {
   background-color: var(--error);
 }
 
@@ -267,6 +288,83 @@ button {
 .map-popup,
 .item-added {
     display: none;
+}
+
+.catalog-title {
+    background-color: #F2F6F8;
+    width: 940px;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.breadcrumps a,
+.filter-section {
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.manufacturer-item label,
+.power-item {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.filter-button {
+    font-size: 13px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    border: solid 1px #e5e5e5;
+}
+
+.catalog-item {
+    width: 220px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.catalog-item h3 {
+    color: var(--basic-black);
+}
+
+.old-price,
+.current-price {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.old-price {
+    color: #A9A9A9;
+}
+
+.current-price {
+    width: 141px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    text-align: center;
+}
+
+.cart-button,
+.bookmark-button {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cart-button {
+    background-color: var(--basic-green);
+}
+
+.bookmark-button {
+    color: var(--basic-darkblue);
+    background-color: var(--basic-white);
+    border: solid 3px var(--basic-green);
 }
 
 .footer-up {
