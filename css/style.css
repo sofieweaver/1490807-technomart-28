@@ -346,17 +346,12 @@ section.filter-section {
 
 .catalog-item {
   width: 220px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
 }
-
-.catalog-item span {
-    display: none;
-}
-
 .item-name {
-  color: var(--basic-black);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--basic-black);
+    line-height: 20px;
 }
 
 .old-price,
@@ -378,6 +373,11 @@ section.filter-section {
   background-color: var(--basic-red);
   text-align: center;
 }
+
+.catalog-item span {
+    display: none;
+}
+
 
 .cart-button,
 .bookmark-button {
