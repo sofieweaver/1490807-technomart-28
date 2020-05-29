@@ -29,10 +29,7 @@ body {
     padding: 0;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
     color: var(--basic-black);
-    text-transform: none;
     background-color: var(--basic-white)
     
 }
@@ -176,7 +173,7 @@ button {
 .phone-header {
     color: var(--basic-red);
     font-size: 21px;
-    font-style: bold;
+    font-weight: 700;
     line-height: 30px;
     border: solid 3px #fff;
 }
@@ -254,19 +251,28 @@ button {
 }
 
 .main-title,
-.contacts-title,
-.catalog-title {
-    font-family: 'Cuprum', sans-serif;
+.section-title {
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
-    font-weight: 400;
     text-transform: uppercase;
+}
+
+.popular-title {
+    color: var(--basic-darkblue);
 }
 
 .partners {
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 18px;
     margin: 0 0 37;
+}
+
+.service-title {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 36px;
+    color: var(--basic-darkblue);
+    text-transform: uppercase;
 }
 
 .about-section a {
@@ -292,12 +298,13 @@ button {
 }
 
 .catalog-title {
+    color: var(--basic-darkblue);
     background-color: #F2F6F8;
     width: 940px;
 }
 
 .form-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 17px;
     line-height: 30px;
 }
@@ -328,17 +335,17 @@ section.filter-section {
 .catalog-item {
     width: 220px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 20px;
 }
 
-.catalog-item h3 {
+.item-name {
     color: var(--basic-black);
 }
 
 .old-price,
 .current-price {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
