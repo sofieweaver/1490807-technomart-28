@@ -181,9 +181,9 @@ button {
 }
 
 .header-contacts {
-    text-align: center;
-    vertical-align: middle;
-  }
+  text-align: center;
+  vertical-align: middle;
+}
 
 .phone-header {
   color: var(--basic-red);
@@ -233,9 +233,9 @@ button {
 }
 
 .user-link {
-    font-size: 18px;
-    line-height: 18px;
-    color: var(--basic-darkblue);
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--basic-darkblue);
 }
 
 .profile-links a:hover,
@@ -409,23 +409,23 @@ button {
 }
 
 .about-section p {
-    line-height: 24px;
-  }
+  line-height: 24px;
+}
 
 .partners {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-    margin: 0 0 37;
-  }  
+  margin: 0 0 37;
+}
 
-  .about-button {
-    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic-white);
-    text-transform: uppercase;
-    background-color: var(--basic-red);
+.about-button {
+  font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red);
 }
 
 .contact-us-button:active {
@@ -457,7 +457,7 @@ section.filter-section {
 }
 
 .breadcrumps a {
-    line-height: 18px;
+  line-height: 18px;
 }
 
 .breadcrumps a,
@@ -470,6 +470,10 @@ section.filter-section {
 .sorting-title {
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.filter-title {
+  background-color: var(--milk-background);
 }
 
 .range-field,
@@ -526,11 +530,12 @@ section.filter-section {
 .catalog-item {
   width: 220px;
 }
+
 .item-name {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--basic-black);
-    line-height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--basic-black);
+  line-height: 20px;
 }
 
 .old-price,
@@ -554,7 +559,7 @@ section.filter-section {
 }
 
 .catalog-item span {
-    display: none;
+  display: none;
 }
 
 .page-number {
