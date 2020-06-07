@@ -15,7 +15,7 @@
 <body>
 
   <header class="main-header">
-    <div class="header-up-box">
+    <div class="header-up-wrap">
       <div class="container">
         <nav class="header-up">
           <a class="logo" href="index.html">
@@ -31,17 +31,17 @@
 
           <ul class="navigation-panel">
             <li>
-              <a class=" header-button bookmarks" href="blank.html">
-                <img src="img/icon-bookmark.svg" width="14" height="16" alt="">Закладки
+              <a class="header-button" href="blank.html">
+                <img src="img/icon-bookmark.svg" width="14" height="16" alt="">Закладки: 0
               </a>
             </li>
             <li>
-              <a class="header-button cart" href="blank.html">
-                <img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина:0
+              <a class="header-button" href="blank.html">
+                <img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина: 0
               </a>
             </li>
             <li>
-              <a class="order-button order-submission" href="blank.html">Оформить заказ</a>
+              <a class="order-button" href="blank.html">Оформить заказ</a>
             </li>
           </ul>
         </nav>
@@ -49,19 +49,17 @@
     </div>
     <div class="header-container">
       <div class="container">
-        <div class="header-info">
+        <div class="header-grid">
           <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <div class="header-contacts">
-            <img src="img/icon-phone.svg" width="19" height="19" alt="Телефон">
             <a class="phone-header" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-            <p><span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
           <section class="user-navigation">
             <h2 class="visually-hidden">Кабинет пользователя</h2>
             <ul class="user-profile">
               <li>
-                <img src="img/icon-login.svg" width="20" height="17" alt="Вход">
                 <a class="login-button" href="blank.html">Войти</a>
               </li>
               <li>
@@ -69,33 +67,33 @@
               </li>
             </ul>
           </section>
-        </div>
 
-        <nav class="main-navigation">
-          <ul class="features-navigation">
-            <li>
-              <a class="menu-feature">Главная</a>
-            </li>
-            <li>
-              <a class="menu-feature" href="blank.html">Компания</a>
-            </li>
-            <li>
-              <a class="menu-feature" href="catalog.html">Каталог</a>
-            </li>
-            <li>
-              <a class="menu-feature" href="blank.html">Новости</a>
-            </li>
-            <li>
-              <a class="menu-feature" href="blank.html">Спецпредложения</a>
-            </li>
-            <li>
-              <a class="menu-feature" href="blank.html">Доставка</a>
-            </li>
-            <li>
-              <a class="menu-feature" href="blank.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-navigation">
+            <ul class="features-navigation">
+              <li>
+                <a class="menu-feature">Главная</a>
+              </li>
+              <li>
+                <a class="menu-feature" href="blank.html">Компания</a>
+              </li>
+              <li>
+                <a class="menu-feature" href="catalog.html">Каталог</a>
+              </li>
+              <li>
+                <a class="menu-feature" href="blank.html">Новости</a>
+              </li>
+              <li>
+                <a class="menu-feature" href="blank.html">Спецпредложения</a>
+              </li>
+              <li>
+                <a class="menu-feature" href="blank.html">Доставка</a>
+              </li>
+              <li>
+                <a class="menu-feature" href="blank.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
 
@@ -334,21 +332,30 @@
       </section>
     </div>
 
-    <div class="about-company container">
+    <div class="container">
       <section class="about-section">
-        <h1 class="main-title">Компания «Техномарт»</h1>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>ремонта и строительства не оставит
-          равнодушными любителей сэкономить на<br> гастарбайтерах.</p>
+      <div class="about-company">
+        <h2 class="visually-hidden">О компании</h2>
 
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными
-          компаниями:</p>
-        <ul class="partners">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="btn about-button" href="blank.html">Подробнее о компании</a>
-      </section>
+        <div class="about-line">
+          <h1 class="main-title">Компания «Техномарт»</h1>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+            строительства не оставит
+            равнодушными любителей сэкономить на гастарбайтерах.</p>
+        </div>
+
+        <div class="partners">
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает
+            со многими транспортными
+            компаниями:</p>
+          <ul class="partners-list">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="btn about-button" href="blank.html">Подробнее о компании</a>
+        </div>
+      </div>
 
       <section class="contacts-section">
         <h2 class="section-title">Контакты</h2>
@@ -357,26 +364,27 @@
         <p>
           <button class="btn contact-us-button" type="button">Заблудились? Напишите нам!</button>
         </p>
+        <div class="contact-us-form">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" name="email" id="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="comment">Текст письма:</label><br>
+              <textarea name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Оформить заказ</button>
+            <button type="button">
+              <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
+            </button>
+          </form>
+        </div>
+      </section>
+      </section>
     </div>
-    <div class="contact-us-form">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" id="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="comment">Текст письма:</label><br>
-          <textarea name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Оформить заказ</button>
-        <button type="button">
-          <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
-        </button>
-      </form>
-    </div>
-    </section>
 
     <section class="map-popup">
       <h2 class="visually-hidden">Как проехать?</h2>
