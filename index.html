@@ -100,7 +100,7 @@
   </header>
 
   <main>
-    <section class="features-promo-section">
+    <section class="features-promo-section container">
       <h2 class="visually-hidden">Мы предлагаем</h2>
       <ul class="features-line">
         <li class="feature-item">
@@ -121,83 +121,81 @@
         </li>
       </ul>
 
-      <div class="promo-container">
-        <div class="slider">
-          <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-1" checked>
-          <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-2">
-          <img src="img/icon-left.svg" width="22" height="40" alt="Вперед">
-          <img src="img/icon-left.svg" width="22" height="40" alt="Назад">
-          <ul class="slider-content">
-            <li class="slider-item">
-              <figure>
-                <img src="img/worker.jpg" width="620" height="266" alt="Перфораторы">
-                <figcaption>
-                  <h3 class="slider-title">Перфораторы</h3>
-                  <p>Настоящие мужские игрушки</p>
-                </figcaption>
-              </figure>
-              <a class="btn catalog-button" href="catalog.html">Открыть каталог</a>
-            </li>
-            <li class="slider-item">
-              <figure>
-                <img src="img/worker2.jpg" width="620" height="266" alt="Дрели">
-                <figcaption>
-                  <h3 class="slider-title">Дрели</h3>
-                  <p>Соседям на радость!</p>
-                </figcaption>
-              </figure>
-              <a class="btn catalog-button" href="blank.html">Открыть каталог</a>
-            </li>
-          </ul>
-          <div class="slider-controller">
-            <label for="slider-1">
-              <img src="img/icon-left.svg" width="22" height="40" alt="Вперед">
-            </label>
-            <label for="slider-2">
-              <img src="img/icon-left.svg" width="22" height="40" alt="Назад">
-            </label>
-          </div>
-        </div>
-
-        <ul class="features-column">
-          <li class="feature-item">
-            <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
-            <h3 class="feature-title">Скидки 50%</h3>
-            <a class="feature-button" href="blank.html">На 350 товаров</a>
+      <div class="slider">
+        <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-1" checked>
+        <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-2">
+        <img src="img/icon-left.svg" width="22" height="40" alt="Вперед">
+        <img src="img/icon-left.svg" width="22" height="40" alt="Назад">
+        <ul class="slider-content">
+          <li class="slider-item">
+            <figure>
+              <img src="img/worker.jpg" width="620" height="266" alt="Перфораторы">
+              <figcaption>
+                <h3 class="slider-title">Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </figcaption>
+            </figure>
+            <a class="btn catalog-button" href="catalog.html">Открыть каталог</a>
           </li>
-          <li class="feature-item">
-            <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
-            <h3 class="feature-title">Доставка</h3>
-            <a class="feature-button" href="blank.html">Бесплатно</a>
+          <li class="visually-hidden slider-item">
+            <figure>
+              <img src="img/worker2.jpg" width="620" height="266" alt="Дрели">
+              <figcaption>
+                <h3 class="slider-title">Дрели</h3>
+                <p>Соседям на радость!</p>
+              </figcaption>
+            </figure>
+            <a class="btn catalog-button" href="blank.html">Открыть каталог</a>
           </li>
         </ul>
+        <div class="slider-controller">
+          <label for="slider-1">
+            <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Вперед">
+          </label>
+          <label for="slider-2">
+            <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Назад">
+          </label>
+        </div>
       </div>
+
+      <ul class="features-column">
+        <li class="feature-item">
+          <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
+          <h3 class="feature-title">Скидки 50%</h3>
+          <a class="feature-button" href="blank.html">На 350 товаров</a>
+        </li>
+        <li class="feature-item">
+          <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
+          <h3 class="feature-title">Доставка</h3>
+          <a class="feature-button" href="blank.html">Бесплатно</a>
+        </li>
+      </ul>
     </section>
 
-    <section class="popular-items-section">
-      <div class="popular-title-container">
+    <section class="popular-items-section container">
+      <div class="popular-field">
         <h2 class="section-title popular-title">Популярные товары</h2>
         <a class="btn popular-items-button" href="blank.html">Все популярные товары</a>
       </div>
 
       <ul class="popular-list">
         <li class="catalog-item">
+          <p>
+            <img src="img/bosch-bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+          </p>
           <a href="blank.html">
             <h3 class="item-name">Перфоратор BOSCH<br>BFG 9000</h3>
-            <p>
-              <img src="img/bosch-bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </p>
           </a>
           <p class="old-price">32500 Р.</p>
           <p class="current-price">25500 Р.</p>
         </li>
 
         <li class="catalog-item">
+          <p>
+            <img src="img/bosch-bfg2000-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+          </p>
           <a href="blank.html">
             <h3 class="item-name">Перфоратор BOSCH<br>BFG 3000</h3>
-            <p>
-              <img src="img/bosch-bfg2000-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            </p>
           </a>
           <p class="old-price">22500 Р.</p>
           <p class="current-price">15500 Р.</p>
@@ -205,22 +203,22 @@
         </li>
 
         <li class="catalog-item">
+          <p>
+            <img src="img/bosch-bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          </p>
           <a href="blank.html">
             <h3 class="item-name">Перфоратор BOSCH<br>BFG 6000</h3>
-            <p>
-              <img src="img/bosch-bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </p>
           </a>
           <p class="old-price">30500 Р.</p>
           <p class="current-price">25500 Р.</p>
         </li>
 
         <li class="catalog-item">
+          <p>
+            <img src="img/bosch-bfg2000-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+          </p>
           <a href="blank.html">
             <h3 class="item-name">Перфоратор BOSCH<br>BFG 2000</h3>
-            <p>
-              <img src="img/bosch-bfg2000-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            </p>
           </a>
           <p class="current-price">12500 Р.</p>
           <span class="visually-hidden">New</span>
@@ -229,12 +227,12 @@
       </ul>
     </section>
 
-    <section class="popular-manufacturers-section">
-      <div class="popular-title-container">
+    <section class="popular-manufacturers container">
+      <div class="popular-field">
         <h2 class="section-title popular-title">Популярные производители</h2>
         <a class="btn all-manufacturers-button" href="blank.html">Все производители</a>
       </div>
-      <ul class="popular-list">
+      <ul class="popular-manufacturers-list">
         <li class="manufacturer-item">
           <a href="blank.html">
             <img src="img/logo-bosch.png" width="126" height="37" alt="BOSCH">
@@ -278,109 +276,112 @@
       </ul>
     </section>
 
-    <div class="service-section-container">
-      <section class="service-section">
-        <h2 class="section-title">Сервисы</h2>
-        <p class="service-promo">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      </section>
+    <div class="service-section ">
+      <div class="container">
+        <section class="service-field">
+          <h2 class="section-title">Сервисы</h2>
+          <p class="service-promo">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </section>
 
-      <section>
-        <input class="visually-hidden" type="radio" id="delivery" name="service" checked>
-        <input class="visually-hidden" type="radio" id="warranty" name="service">
-        <input class="visually-hidden" type="radio" id="credit" name="service">
+        <section>
+          <input class="visually-hidden" type="radio" id="delivery" name="service" checked>
+          <input class="visually-hidden" type="radio" id="warranty" name="service">
+          <input class="visually-hidden" type="radio" id="credit" name="service">
 
-        <div class="submenu-container">
+          <div class="submenu-container">
 
-          <div class="service-controllers">
-            <ul class="service-list">
-              <li>
-                <label for="delivery" class="service-option">Доставка</label>
-              </li>
-              <li>
-                <label for="warranty" class="service-option">Гарантия</label>
-              </li>
-              <li>
-                <label for="credit" class="service-option">Кредит</label>
-              </li>
-            </ul>
+            <div class="service-controllers">
+              <ul class="service-list">
+                <li>
+                  <label for="delivery" class="service-option">Доставка</label>
+                </li>
+                <li>
+                  <label for="warranty" class="service-option">Гарантия</label>
+                </li>
+                <li>
+                  <label for="credit" class="service-option">Кредит</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-delivery-submenu">
+              <h2 class="service-title-delivery">Доставка</h2>
+              <img src="img/delivery-car.png" width="468" height="261" alt="Бесплатная доставка">
+              <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </div>
+
+            <div class="service-warranty-submenu">
+              <h2 class="service-title">Гарантия</h2>
+              <img src="img/quality.png" width="389" height="283" alt="Гарантия качества">
+              <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
+                его<br>
+                возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
+                новый.<br>
+                Дом уж восстановите как-нибудь сами.</p>
+            </div>
+
+            <div class="service-credit-submenu">
+              <h2 class="service-title">Кредит</h2>
+              <img src="img/credit.png" width="465" height="285" alt="Оформляем кредит">
+              <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+              <a class="credit-button" href="blank.html">Отправить заявку</a>
+            </div>
           </div>
-
-          <div class="service-delivery-submenu">
-            <h2 class="service-title-delivery">Доставка</h2>
-            <img src="img/delivery-car.png" width="468" height="261" alt="Бесплатная доставка">
-            <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-          </div>
-
-          <div class="service-warranty-submenu">
-            <h2 class="service-title">Гарантия</h2>
-            <img src="img/quality.png" width="389" height="283" alt="Гарантия качества">
-            <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
-              его<br>
-              возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на новый.<br>
-              Дом уж восстановите как-нибудь сами.</p>
-          </div>
-
-          <div class="service-credit-submenu">
-            <h2 class="service-title">Кредит</h2>
-            <img src="img/credit.png" width="465" height="285" alt="Оформляем кредит">
-            <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
-            <a class="credit-button" href="blank.html">Отправить заявку</a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
     <div class="container">
       <section class="about-section">
-      <div class="about-company">
-        <h2 class="visually-hidden">О компании</h2>
+        <div class="about-company">
+          <h2 class="visually-hidden">О компании</h2>
 
-        <div class="about-line">
-          <h1 class="main-title">Компания «Техномарт»</h1>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-            строительства не оставит
-            равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <div class="about-line">
+            <h1 class="main-title">Компания «Техномарт»</h1>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+              строительства не оставит
+              равнодушными любителей сэкономить на гастарбайтерах.</p>
+          </div>
+
+          <div class="partners">
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает
+              со многими транспортными
+              компаниями:</p>
+            <ul class="partners-list">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="btn about-button" href="blank.html">Подробнее о компании</a>
+          </div>
         </div>
 
-        <div class="partners">
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает
-            со многими транспортными
-            компаниями:</p>
-          <ul class="partners-list">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="btn about-button" href="blank.html">Подробнее о компании</a>
-        </div>
-      </div>
-
-      <section class="contacts-section">
-        <h2 class="section-title">Контакты</h2>
-        <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-        <img src="img/map.png" width="300" height="158" alt="адрес Большая Конюшенная ул. д.17">
+        <section class="contacts-section">
+          <h2 class="section-title">Контакты</h2>
+          <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+          <img src="img/map.png" width="300" height="158" alt="адрес Большая Конюшенная ул. д.17">
           <button class="btn contact-us-button" type="button">Заблудились? Напишите нам!</button>
-        <div class="contact-us-form">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="name">Ваше имя:</label>
-              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-              <label for="email">Ваш e-mail:</label>
-              <input type="email" name="email" id="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="comment">Текст письма:</label><br>
-              <textarea name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
-            </p>
-            <button type="submit">Оформить заказ</button>
-            <button type="button">
-              <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
-            </button>
-          </form>
-        </div>
-      </section>
+          <div class="contact-us-form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" name="email" id="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="comment">Текст письма:</label><br>
+                <textarea name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
+              </p>
+              <button type="submit">Оформить заказ</button>
+              <button type="button">
+                <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
+              </button>
+            </form>
+          </div>
+        </section>
       </section>
     </div>
 

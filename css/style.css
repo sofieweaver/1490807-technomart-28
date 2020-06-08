@@ -151,6 +151,7 @@ img {
 .slider-content,
 .features-column,
 .popular-list,
+.popular-manufacturers-list,
 .service-list,
 .breadcrumps,
 .sorting-list,
@@ -394,8 +395,30 @@ img {
   text-transform: uppercase;
 }
 
+.features-promo-section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 300px;
+  align-items: start;
+}
+
+.features-line {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 300px;
+  gap: 20px;
+  padding-left: 0;
+}
+
 .feature-item {
   width: 300px;
+  height: 123px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-item img {
+  align-self: flex-end;
 }
 
 .features-line .feature-item:first-child {
@@ -418,6 +441,13 @@ img {
   line-height: 1.15;
 }
 
+.features-column {
+  grid-column: -1;
+  display: grid;
+  grid-template-rows:  123px 123px;
+  gap: 20px;
+}
+
 .features-column .feature-item:first-child {
   background-color: var(--special-greenlight);
 }
@@ -431,7 +461,9 @@ img {
   font-size: 14px;
   line-height: 1.45;
   color: var(--basic-white);
-  background-color: rgba(255, 255, 255, 0.3)
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+  align-self: flex-start;
 }
 
 .feature-button:hover,
@@ -446,6 +478,12 @@ img {
 .slider {
   font-family: 'Cuprum', Arial, sans-serif;
   color: var(--basic-white);
+  grid-column: 1 / -1;
+}
+
+.slider-content {
+  padding-left: 0;
+  margin: 0;
 }
 
 .slider-title {
@@ -453,6 +491,11 @@ img {
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
+}
+
+.slider-item figure {
+  margin: 0;
+  padding: 0;
 }
 
 .slider-item p {
@@ -468,13 +511,52 @@ img {
   text-transform: uppercase;
 }
 
+.popular-items-section {
+}
+
 .popular-title,
 .service-title-delivery {
   color: var(--basic-darkblue);
 }
 
-.popular-title-container {
+.popular-title {
+  padding-left: 28px;
+}
+
+.popular-items-button,
+.all-manufacturers-button {
+  margin-right: 19px;
+  padding: 11px 38px 9px;
+}
+
+.popular-field {
+  grid-column: 1 / 2;
   background-color: var(--coldwhite-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-list {
+  width: 940px;
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.popular-manufacturers {
+  display: grid;
+  grid-row: 89px 1fr 1fr;
+  align-items: start;
+}
+
+.popular-manufacturers-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  padding-left: 0;
+  gap: 20px;
 }
 
 .manufacturer-item,
@@ -483,7 +565,11 @@ img {
   border: 1px solid var(--special-grey);
 }
 
-.service-section-container {
+.manufacturer-item {
+  height: 145px;
+}
+
+.service-section {
   background-color: var(--basic-background);
 }
 
@@ -901,7 +987,6 @@ section.filter-section {
 
 .catalog-info {
   background-color: var(--basic-background);
-  grid-column: 1/ -1;
 }
 
 .catalog-info p {
