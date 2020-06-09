@@ -48,7 +48,6 @@ a {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -402,23 +401,24 @@ fieldset {
 .features-promo-section {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 300px;
+  grid-template-columns: 300px 1fr 1fr;
   align-items: start;
 }
 
 .features-line {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 300px;
-  gap: 20px;
+  display: flex;
   padding-left: 0;
+  justify-content: space-between;
 }
 
 .feature-item {
+  box-sizing: border-box;
   width: 300px;
   height: 123px;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .feature-item img {
@@ -443,13 +443,17 @@ fieldset {
   font-weight: 700;
   color: var(--basic-white);
   line-height: 1.15;
+  margin: 0;
+  padding: 0;
 }
 
 .features-column {
-  grid-column: -1;
+  grid-column: 3;
+  margin: 0;
   display: grid;
-  grid-template-rows:  123px 123px;
+  grid-template-rows: 123px 123px;
   gap: 20px;
+  padding-top: 10px;
 }
 
 .features-column .feature-item:first-child {
@@ -468,6 +472,10 @@ fieldset {
   background-color: rgba(255, 255, 255, 0.3);
   margin: 0;
   align-self: flex-start;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: 135px;
+  margin-top: 12px;
 }
 
 .feature-button:hover,
@@ -482,7 +490,8 @@ fieldset {
 .slider {
   font-family: 'Cuprum', Arial, sans-serif;
   color: var(--basic-white);
-  grid-column: 1 / -1;
+  grid-column: 1 / 3;
+  margin-top: 13px;
 }
 
 .slider-content {
@@ -513,9 +522,11 @@ fieldset {
   line-height: 1.45;
   background-color: var(--basic-red);
   text-transform: uppercase;
+  padding: 11px 46px;
 }
 
 .popular-items-section {
+  margin-bottom: 60px;
 }
 
 .popular-title,
@@ -554,6 +565,7 @@ fieldset {
   display: grid;
   grid-row: 89px 1fr 1fr;
   align-items: start;
+  margin-bottom: 60px;
 }
 
 .popular-manufacturers-list {
@@ -561,6 +573,7 @@ fieldset {
   grid-template-columns: 220px 220px 220px 220px;
   padding-left: 0;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .manufacturer-item,
@@ -578,11 +591,12 @@ fieldset {
 
 .service-section {
   background-color: var(--basic-background);
-  padding-top: 60px;
+  line-height: 1.65;
 }
 
-.service-promo {
-  line-height: 1.45;
+.service-field {
+  padding-top: 42px;
+  margin-bottom: 68px;
 }
 
 .submenu-container {
@@ -595,6 +609,7 @@ fieldset {
   padding-left: 0;
   padding-bottom: 100px;
   width: 240px;
+  margin: 0;
 }
 
 .service-list li {
@@ -619,16 +634,25 @@ fieldset {
   padding-right: 37px; 
 }
 
+.service-option-submenu {
+  flex-grow: 1;
+}
+
 .service-title {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 36px;
   line-height: 1.15;
   color: var(--basic-darkblue);
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .service-delivery-submenu {
-  display: block;
+  padding-left: 77px;
+}
+
+.service-delivery-submenu img {
+  text-align: end;
 }
 
 .credit-button {
