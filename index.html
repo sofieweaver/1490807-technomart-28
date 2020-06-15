@@ -31,14 +31,10 @@
 
           <ul class="navigation-panel">
             <li>
-              <a class="header-button" href="blank.html">
-                <img src="img/icon-bookmark.svg" width="14" height="16" alt="">Закладки: 0
-              </a>
+              <a class="header-button bookmarks" href="blank.html">Закладки: 0</a>
             </li>
             <li>
-              <a class="header-button" href="blank.html">
-                <img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина: 0
-              </a>
+              <a class="header-button cart" href="blank.html">Корзина: 0</a>
             </li>
             <li>
               <a class="order-button" href="blank.html">Оформить заказ</a>
@@ -103,21 +99,18 @@
     <section class="features-promo-section container">
       <h2 class="visually-hidden">Мы предлагаем</h2>
       <ul class="features-line">
-        <li class="feature-item">
+        <li class="feature-item materials">
           <h3 class="feature-title">Материалы</h3>
           <a class="feature-button" href="blank.html">На любой вкус</a>
-          <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
           <span class="visually-hidden">New</span>
         </li>
-        <li class="feature-item">
+        <li class="feature-item tool">
           <h3 class="feature-title">Инструмент</h3>
           <a class="feature-button" href="blank.html">На все случаи</a>
-          <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
         </li>
-        <li class="feature-item">
+        <li class="feature-item tech">
           <h3 class="feature-title">Техника</h3>
           <a class="feature-button" href="blank.html">Для стройки</a>
-          <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
         </li>
       </ul>
 
@@ -127,49 +120,46 @@
         <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Вперед">
         <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Назад">
         <ul class="slider-content">
-          <li class="slider-item">
-            <figure>
-              <img src="img/worker.jpg" width="620" height="266" alt="Перфораторы">
-              <figcaption>
-                <h3 class="slider-title">Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-              </figcaption>
-            </figure>
-            <a class="btn catalog-button" href="catalog.html">Открыть каталог</a>
+          <li class="slider-item slide-current">
+            <div class="slide-wrapper-1">
+              <figure>
+                <figcaption>
+                  <h3 class="slider-title">Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                </figcaption>
+              </figure>
+              <a class="btn catalog-button" href="catalog.html">Открыть каталог</a>
+            </div>
           </li>
           <li class="visually-hidden slider-item">
-            <figure>
-              <img src="img/worker2.jpg" width="620" height="266" alt="Дрели">
-              <figcaption>
-                <h3 class="slider-title">Дрели</h3>
-                <p>Соседям на радость!</p>
-              </figcaption>
-            </figure>
-            <a class="btn catalog-button" href="blank.html">Открыть каталог</a>
+            <div class="slide-wrapper-2">
+              <figure>
+                <figcaption>
+                  <h3 class="slider-title">Дрели</h3>
+                  <p>Соседям на радость!</p>
+                </figcaption>
+              </figure>
+              <a class="btn catalog-button" href="blank.html">Открыть каталог</a>
+            </div>
           </li>
         </ul>
-        <div class="slider-controller">
-          <label for="slider-1">
-            <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Вперед">
-          </label>
-          <label for="slider-2">
-            <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Назад">
-          </label>
+
+        <div class="slider-controls">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
         </div>
       </div>
 
-      <ul class="features-column">
-        <li class="feature-item">
-          <h3 class="feature-title">Скидки 50%</h3>
-          <a class="feature-button" href="blank.html">На 350 товаров</a>
-          <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
-        </li>
-        <li class="feature-item">
-          <h3 class="feature-title">Доставка</h3>
-          <a class="feature-button" href="blank.html">Бесплатно</a>
-          <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
-        </li>
-      </ul>
+        <ul class="features-column">
+          <li class="feature-item discounts">
+            <h3 class="feature-title">Скидки 50%</h3>
+            <a class="feature-button" href="blank.html">На 350 товаров</a>
+          </li>
+          <li class="feature-item deliver">
+            <h3 class="feature-title">Доставка</h3>
+            <a class="feature-button" href="blank.html">Бесплатно</a>
+          </li>
+        </ul>
     </section>
 
     <section class="popular-items-section container">
@@ -291,27 +281,26 @@
 
           <div class="service-controllers">
             <ul class="service-list">
-              <li>
+              <li class="service-options">
                 <label for="delivery" class="service-option">Доставка</label>
               </li>
-              <li>
+              <li class="service-options">
                 <label for="warranty" class="service-option">Гарантия</label>
               </li>
-              <li>
+              <li class="service-options">
                 <label for="credit" class="service-option">Кредит</label>
               </li>
             </ul>
           </div>
 
           <div class="service-option-submenu">
-            <div class="service-delivery-submenu">
-              <h2 class="service-title delivery">Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+            <div class="service-delivery-submenu slide-1">
+              <h2 class="service-title">Доставка</h2>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-              <img class="visually-hidden" src="img/delivery-car.png" width="468" height="261" alt="Бесплатная доставка">
             </div>
 
-            <div class="service-warranty-submenu">
+            <div class="service-warranty-submenu slide-2">
               <h2 class="service-title">Гарантия</h2>
               <img src="img/quality.png" width="389" height="283" alt="Гарантия качества">
               <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
@@ -321,7 +310,7 @@
                 Дом уж восстановите как-нибудь сами.</p>
             </div>
 
-            <div class="service-credit-submenu">
+            <div class="service-credit-submenu slide-3">
               <h2 class="service-title">Кредит</h2>
               <img src="img/credit.png" width="465" height="285" alt="Оформляем кредит">
               <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
