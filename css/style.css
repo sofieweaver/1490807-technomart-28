@@ -23,6 +23,7 @@
 
   --social_btn_blue: #212A3A;
   --darkblue-background: #293449;
+  --grey-item-information: #A9A9A9;
   --milk-background: #F7F3EC;
   --coldwhite-background: #F9F5F0;
   --lightblue-background: #F2F6F8;
@@ -226,6 +227,10 @@ fieldset {
   display: block;
 }
 
+.in-cart {
+  background-color: var(--basic-red);
+}
+
 .bookmarks::before {
   content: "";
   position: absolute;
@@ -355,10 +360,16 @@ fieldset {
   position: absolute;
   top: 14px;
   left: 18px;
+  fill: var(--basic-greylight);
 }
 
-.login-icon path:hover {
+.login-icon:hover,
+.login-icon:focus {
   fill: var(--basic-grey);
+}
+
+.login-icon:active{
+  fill: var(--basic-greylight);
 }
 
 .signup-button {
@@ -379,29 +390,71 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 40px;
   margin: 0;
 }
 
 .profile-button {
+  position: relative;
   align-self: flex-end;
   font-size: 21px;
   line-height: 1.15;
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-align: center;
-  padding: 15px 50px 10px 60px;
+  padding: 12px 57px 12px 56px;
   margin: 0;
+  margin-top: 5px;
 }
 
+.profile-button:hover,
 .profile-button:active {
   color: var(--basic-greylight);
 }
 
+.profile-button:hover::before,
+.profile-button:hover::after {
+  fill: var(--basic-grey);
+}
+
+.user-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  fill: var(--basic-greylight);
+}
+
+.user-icon:hover,
+.user-icon:focus,
+.logout-icon:hover,
+.logout-icon:focus {
+  fill: var(--basic-grey);
+}
+
+.user-icon:active,
+.logout-icon:active {
+  fill: var(--basic-greylight);
+}
+
+.logout-icon {
+  position: absolute;
+  top: 14px;
+  left: 260px;
+  fill: var(--basic-greylight);
+}
+
+.logout-icon:hover {
+  fill: var(--basic-grey);
+}
+
 .profile-links {
   display: flex;
+  width: 210px;
   justify-content: center;
-  margin-top: 5px;
+  align-items: center;
+  margin-top: 3px;
+  padding-left: 55px;
 }
 
 .user-link {
@@ -410,8 +463,20 @@ fieldset {
   color: var(--basic-darkblue);
 }
 
-.user-link.my-orders {
+.my-orders {
+  position: relative;
   padding-right: 30px;
+}
+
+.my-orders::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  right: 10%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--basic-darkblue);
 }
 
 .profile-links a:hover,
@@ -469,7 +534,6 @@ fieldset {
   font-size: 30px;
   line-height: 1.15;
   text-transform: uppercase;
-
 }
 
 .section-title {
@@ -969,7 +1033,7 @@ fieldset {
   font-weight: 700;
   font-size: 17px;
   line-height: 1.45;
-  padding-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 section.filter-section {
@@ -981,6 +1045,8 @@ section.filter-section {
   grid-column: 1 / -1;
   display: flex;
   padding-left: 0;
+  margin-top: 21px;
+  margin-bottom: 10px;
 }
 
 .breadcrumps li {
@@ -999,27 +1065,28 @@ section.filter-section {
 
 .catalog-title {
   grid-column: 1 / -1;
-  ;
   color: var(--basic-darkblue);
   background-color: var(--lightblue-background);
-  padding: 30px;
-  margin-top: 0;
-  margin-bottom: 5px;
+  padding: 29px 0 25px 29px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .filter-title,
 .sorting-title {
-  line-height: 1.45;
   text-transform: uppercase;
-  margin: 0;
-  padding: 10px 10px 10px 20px;
 }
 
 .filter-title {
   background-color: var(--milk-background);
-  box-sizing: border-box;
-  width: 220px;
+  width: 200px;
   grid-column: 1;
+  border-radius: 3px;
+  padding: 10px 0px 13px 18px;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 6px;
 }
 
 .filter-item {
@@ -1029,7 +1096,7 @@ section.filter-section {
 }
 
 .range-filter {
-  width:220px;
+  width: 220px;
   margin-top: 10px;
 }
 
@@ -1038,7 +1105,6 @@ section.filter-section {
   height: 41px;
   background-color: var(--milk-background);
   border-radius: 5px;
-  margin-bottom: 9px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1144,6 +1210,14 @@ input::-webkit-inner-spin-button {
   background-color: var(--milk-background);
   display: flex;
   justify-content: space-between;
+  height: 38px;
+  border-radius: 3px;
+}
+
+.sorting-title {
+  padding-top: 10px;
+  padding-left: 19px;
+  margin-top: 0;
 }
 
 .manufacturer-option label,
@@ -1155,18 +1229,15 @@ input::-webkit-inner-spin-button {
 .sorting-buttons {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .sorting-list {
-  width: 375px;
+  width: 460px;
   display: flex;
   justify-content: space-between;
-}
-
-.arrows {
-  align-self: center;
-  margin-left: 45px;
-  margin-right: 17px;
+  margin: 0;
+  padding-left: 0;
 }
 
 .arrows input:last-child {
@@ -1224,6 +1295,7 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
+  margin-top: 4px;
 }
 
 .catalog-cards .catalog-item:nth-child(3),
@@ -1235,12 +1307,31 @@ input::-webkit-inner-spin-button {
 .catalog-item {
   box-sizing: border-box;
   width: 220px;
+  max-height: 318px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 10px 10px 10px 0;
-  padding-bottom: 20px;
   vertical-align: middle;
+  margin: 10px 10px 10px 0;
+  padding-bottom: 21px;
+}
+
+.item-img {
+  position: relative;
+  width: 218px;
+  height: 168px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.item-img img {
+  margin: 0;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .item-name {
@@ -1248,9 +1339,11 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   font-weight: 700;
   color: var(--basic-black);
-  line-height: 1.15;
+  line-height: 1.25;
   text-align: center;
-  margin: 10px 0 0;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0 25px;
 }
 
 .old-price,
@@ -1263,18 +1356,39 @@ input::-webkit-inner-spin-button {
 }
 
 .old-price {
-  color: #A9A9A9;
+  display: block;
+  min-height: 20px;
+  color:var(--grey-item-information);
   text-decoration: line-through;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 11px;
+  margin-top: 3px;
 }
 
 .current-price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-align: center;
-  padding: 10px 30px 10px 10px;
-  margin-top: auto;
+  padding: 6px 29px 8px 29px;
+  border-radius: 2px;
+  max-width: 141px;
+}
+
+.current-price::before {
+  content: "";
+  position: absolute;
+  top: -7%;
+  right: -31%;
+  border: 22px solid transparent;
+  border-left: 21px solid var(--basic-red);
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
 }
 
 .catalog-item span {
@@ -1347,13 +1461,13 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-background);
 }
 
-.catalog-info h3 {
-  padding-top: 69px;
+.about-category-title {
+  padding-top: 64px;
 }
 
-.catalog-info p {
+.about-category {
   line-height: 1.95;
-  padding-bottom: 54px;
+  padding-bottom: 70px;
   margin: 0;
 }
 
@@ -1371,7 +1485,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-info {
-  padding-bottom: 39px;
+  padding-bottom: 37px;
 }
 
 .footer-menu {
@@ -1394,7 +1508,7 @@ input::-webkit-inner-spin-button {
 
 .footer-navigation-panel li,
 .footer-features-list li {
-  margin-left: 55px;
+  margin-left: 59px;
 }
 
 .footer-navigation-panel a:hover,
@@ -1423,8 +1537,10 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   color: var(--basic-white);
-  line-height: 1.45;
+  line-height: 1.25;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-down .container {
@@ -1432,12 +1548,18 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
+.copyright p {
+  margin: 0;
+  padding-top: 35px;
+}
+
 .social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   width: 132px;
-  margin-top: 34px;
+  margin: 0 auto;
+  padding: 35px 35px 35px 80px;
 }
 
 .social-button {
@@ -1455,18 +1577,26 @@ input::-webkit-inner-spin-button {
 .feedback-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 300px;
+  margin: 0;
+  padding-top: 35px;
 }
 
 .footer-feedback {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-bottom: 35px;
 }
 
 .footer-link {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0;
   margin-left: 50px;
+  padding-bottom: 35px;
 }
 
 .footer-feedback span,
