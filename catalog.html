@@ -25,9 +25,8 @@
           <div class="search-container">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <input class="main-search" type="search" name="search" id="search-tool" placeholder="Поиск:">
-              <label class="search-label" for="search-tool">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path fill="#fff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0015 7.5 7.5 7.5 0 107.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 012 7.5z"/></svg>
-              </label>
+              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0015 7.5 7.5 7.5 0 107.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 012 7.5z"/></svg>
+              <label class="search-label" for="search-tool"></label>
             </form>
           </div>
 
@@ -108,18 +107,17 @@
 
       <ol class="breadcrumps">
         <li>
-          <a href="index.html">
-            <img src="img/icon-home.svg" width="14" height="12" alt="Главная">
+          <a class="home-page" href="index.html">
           </a>
         </li>
         <li>
-          <a href="catalog.html">Каталог</a>
+          <a class="sec-1" href="catalog.html">Каталог</a>
         </li>
         <li>
-          <a href="blank.html">Инструмент</a>
+          <a class="sec-2" href="blank.html">Инструмент</a>
         </li>
         <li>
-          <a href="catalog.html">Перфораторы</a>
+          <a class="sec-3" href="catalog.html">Перфораторы</a>
         </li>
       </ol>
 
@@ -189,31 +187,26 @@
               <li class="manufacturer-option">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="manufacturer"
                   id="filter-bosch" value="bosch" checked>
-                <img src="img/checkbox-on.svg" width="27" height="23" alt="Снять выбор">
                 <label for="filter-bosch">Bosch</label>
               </li>
               <li class="manufacturer-option">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="manufacturer"
                   id="filter-interskop" value="interskop">
-                <img src="img/checkbox-off.svg" width="23" height="23" alt="Выбрать">
                 <label for="filter-interskop">Интерскоп</label>
               </li>
               <li class="manufacturer-option">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="manufacturer"
                   id="filter-makita" value="makita" checked>
-                <img src="img/checkbox-on.svg" width="27" height="23" alt="Снять выбор">
                 <label for="filter-makita">Makita</label>
               </li>
               <li class="manufacturer-option">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="manufacturer"
                   id="filter-dewalt" value="dewalt">
-                <img src="img/checkbox-off.svg" width="23" height="23" alt="Выбрать">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
               <li class="manufacturer-option">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="manufacturer"
                   id="filter-hitachi" value="hitachi">
-                <img src="img/checkbox-off.svg" width="23" height="23" alt="Выбрать">
                 <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
@@ -225,13 +218,11 @@
               <li class="power-item">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power" id="battery"
                   checked>
-                <img src="img/radio-on.svg" width="25" height="25" alt="Выбрать">
                 <label for="battery">Аккумуляторные</label>
               </li>
               <li class="power-item">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power"
                   id="mains-power">
-                <img src="img/radio-off.svg" width="25" height="25" alt="Выбрать">
                 <label for="mains-power">Сетевые</label>
               </li>
             </ul>
