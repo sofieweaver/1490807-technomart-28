@@ -25,7 +25,10 @@
           <div class="search-container">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <input class="main-search" type="search" name="search" id="search-tool" placeholder="Поиск:">
-              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path fill="#fff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0015 7.5 7.5 7.5 0 107.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 012 7.5z"/></svg>
+              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                <path fill="#fff"
+                  d="M17 15.586l-3.542-3.542A7.465 7.465 0 0015 7.5 7.5 7.5 0 107.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 012 7.5z" />
+              </svg>
               <label class="search-label" for="search-tool"></label>
             </form>
           </div>
@@ -59,8 +62,10 @@
               <li>
                 <a class="login-button" href="blank.html">
                   <svg class="login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17">
-                    <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-                    <path  d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                    <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
+                    <path
+                      d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+                  </svg>
                   Войти</a>
               </li>
               <li>
@@ -155,16 +160,16 @@
         </div>
       </div>
 
-        <ul class="features-column">
-          <li class="feature-item discounts">
-            <h3 class="feature-title">Скидки 50%</h3>
-            <a class="feature-button" href="blank.html">На 350 товаров</a>
-          </li>
-          <li class="feature-item deliver">
-            <h3 class="feature-title">Доставка</h3>
-            <a class="feature-button" href="blank.html">Бесплатно</a>
-          </li>
-        </ul>
+      <ul class="features-column">
+        <li class="feature-item discounts">
+          <h3 class="feature-title">Скидки 50%</h3>
+          <a class="feature-button" href="blank.html">На 350 товаров</a>
+        </li>
+        <li class="feature-item deliver">
+          <h3 class="feature-title">Доставка</h3>
+          <a class="feature-button" href="blank.html">Бесплатно</a>
+        </li>
+      </ul>
     </section>
 
     <section class="popular-items-section container">
@@ -302,7 +307,8 @@
           <div class="service-option-submenu">
             <div class="service-delivery-submenu slide-1">
               <h2 class="service-title">Доставка</h2>
-              <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
+                совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
 
@@ -357,34 +363,39 @@
           <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
           <img src="img/map.png" width="300" height="158" alt="адрес Большая Конюшенная ул. д.17">
           <button class="btn contact-us-button" type="button">Заблудились? Напишите нам!</button>
-          <div class="contact-us-form">
+          <div class="modal contact-us-modal">
             <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-                <label for="email">Ваш e-mail:</label>
-                <input type="email" name="email" id="email" placeholder="email@example.com">
-              </p>
-              <p>
-                <label for="comment">Текст письма:</label><br>
-                <textarea name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
-              </p>
-              <button type="submit">Оформить заказ</button>
-              <button type="button">
-                <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
-              </button>
+              <div class="contact-form">
+                <div class="name-field-form">
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                </div>
+                <div class="user-contact-form">
+                  <label for="email">Ваш e-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                </div>
+                <div class="message-field-form">
+                  <label for="comment">Текст письма:</label><br>
+                  <textarea class="message-text-form" name="comment" id="comment" placeholder="В свободной форме"></textarea>
+                </div>
+                <div class="place-order-container">
+                  <button class="place-order-btn btn" type="submit">Отправить</button>
+                </div>
+              </div>
+              <button class="modal-close" type="button" aria-label="Закрыть"></button>
             </form>
           </div>
         </section>
       </section>
     </div>
 
-    <section class="map-popup">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как проехать?</h2>
-      <img src="img/big-map.png" width="943" height="449" alt="адрес Большая Конюшенная ул. д.17">
-      <button type="button">
-        <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть">
-      </button>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="943" height="449" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 
   </main>
@@ -449,24 +460,24 @@
         </div>
 
         <div class="social-footer">
-        <ul class="social-media">
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/icon-vk.svg" width="26" height="15" alt="VK">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/icon-fb.svg" width="12" height="22" alt="Facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/icon-insta.svg" width="21" height="21" alt="Instagram">
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="social-media">
+            <li>
+              <a class="social-button" href="#">
+                <img src="img/icon-vk.svg" width="26" height="15" alt="VK">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="img/icon-fb.svg" width="12" height="22" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="img/icon-insta.svg" width="21" height="21" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <div class="feedback-container">
           <p class="footer-feedback">Обратная связь: <span>mail@htmlacademy.ru</span></p>
