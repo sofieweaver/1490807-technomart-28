@@ -314,7 +314,6 @@
 
             <div class="service-warranty-submenu slide-2">
               <h2 class="service-title">Гарантия</h2>
-              <img src="img/quality.png" width="389" height="283" alt="Гарантия качества">
               <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
                 его<br>
                 возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
@@ -324,9 +323,8 @@
 
             <div class="service-credit-submenu slide-3">
               <h2 class="service-title">Кредит</h2>
-              <img src="img/credit.png" width="465" height="285" alt="Оформляем кредит">
               <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
-              <a class="credit-button" href="blank.html">Отправить заявку</a>
+              <a class="btn credit-button" href="blank.html">Отправить заявку</a>
             </div>
           </div>
         </section>
@@ -363,24 +361,28 @@
           <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
           <img src="img/map.png" width="300" height="158" alt="адрес Большая Конюшенная ул. д.17">
           <button class="btn contact-us-button" type="button">Заблудились? Напишите нам!</button>
+
           <div class="modal contact-us-modal">
             <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal-form">
               <div class="contact-form">
                 <div class="name-field-form">
                   <label for="name">Ваше имя:</label>
                   <input type="text" name="name" id="name" placeholder="Имя Фамилия">
                 </div>
-                <div class="user-contact-form">
+                <div class="email-field-form">
                   <label for="email">Ваш e-mail:</label>
                   <input type="email" name="email" id="email" placeholder="email@example.com">
                 </div>
-                <div class="message-field-form">
-                  <label for="comment">Текст письма:</label><br>
-                  <textarea class="message-text-form" name="comment" id="comment" placeholder="В свободной форме"></textarea>
-                </div>
-                <div class="place-order-container">
-                  <button class="place-order-btn btn" type="submit">Отправить</button>
-                </div>
+              </div>
+              <div class="message-field-form">
+                <label for="comment">Текст письма:</label><br>
+                <textarea class="message-text-form" name="comment" id="comment"
+                  placeholder="В свободной форме"></textarea>
+              </div>
+            </div>
+              <div class="place-order-container">
+                <button class="place-order-btn btn" type="submit">Отправить</button>
               </div>
               <button class="modal-close" type="button" aria-label="Закрыть"></button>
             </form>
