@@ -127,8 +127,8 @@
       <div class="slider">
         <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-1" checked>
         <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-2">
-        <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Вперед">
-        <img class="visually-hidden" src="img/icon-left.svg" width="22" height="40" alt="Назад">
+        <label class="slider-arrow-left" for="slider-1"></label>
+        <label class="slider-arrow-right" for="slider-2"></label>
         <ul class="slider-content">
           <li class="slider-item slide-current">
             <div class="slide-wrapper-1">
@@ -244,7 +244,7 @@
 
     <section class="popular-manufacturers container">
       <div class="popular-field">
-        <h2 class="section-title popular-title">Популярные производители</h2>
+        <h2 class="section-title popular-title">Популярные производители:</h2>
         <a class="btn all-manufacturers-button" href="blank.html">Все производители</a>
       </div>
       <ul class="popular-manufacturers-list">
@@ -307,13 +307,13 @@
           <div class="service-controllers">
             <ul class="service-list">
               <li class="service-options service-option-active">
-                <label class="service-list-label" for="delivery" class="service-option">Доставка</label>
+                <label class="service-option service-list-label" for="delivery">Доставка</label>
               </li>
               <li class="service-options">
-                <label class="service-list-label" for="warranty" class="service-option">Гарантия</label>
+                <label class="service-option service-list-label" for="warranty">Гарантия</label>
               </li>
               <li class="service-options">
-                <label class="service-list-label" for="credit" class="service-option">Кредит</label>
+                <label class="service-option service-list-label" for="credit">Кредит</label>
               </li>
             </ul>
           </div>
@@ -379,22 +379,22 @@
           <div class="modal contact-us-modal">
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="modal-form">
-              <div class="contact-form">
-                <div class="name-field-form">
-                  <label for="name">Ваше имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                <div class="contact-form">
+                  <div class="name-field-form">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                  </div>
+                  <div class="email-field-form">
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="email@example.com">
+                  </div>
                 </div>
-                <div class="email-field-form">
-                  <label for="email">Ваш e-mail:</label>
-                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                <div class="message-field-form">
+                  <label for="comment">Текст письма:</label><br>
+                  <textarea class="message-text-form" name="comment" id="comment"
+                    placeholder="В свободной форме"></textarea>
                 </div>
               </div>
-              <div class="message-field-form">
-                <label for="comment">Текст письма:</label><br>
-                <textarea class="message-text-form" name="comment" id="comment"
-                  placeholder="В свободной форме"></textarea>
-              </div>
-            </div>
               <div class="place-order-container">
                 <button class="place-order-btn btn" type="submit">Отправить</button>
               </div>
