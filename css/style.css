@@ -791,7 +791,6 @@ fieldset {
 .slider-item figure {
   margin: 0;
   padding: 0;
-  position: absolute;
 }
 
 .slider-item figcaption {
@@ -801,7 +800,6 @@ fieldset {
 
 .slider-item p {
   font-size: 18px;
-  line-height: 1.45;
   margin: 0;
   margin-top: 5px;
 }
@@ -832,17 +830,18 @@ fieldset {
   justify-content: space-between;
 }
 
-.slider-controls label {
+.first-slide-btn,
+.second-slide-btn {
   padding: 0;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
+  border: 3px solid var(--basic-white);
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
 }
 
-.slider-controls .current {
+.current {
   background-color: var(--basic-red);
 }
 
@@ -993,13 +992,14 @@ fieldset {
   padding-bottom: 18px;
   padding-right: 37px;
   padding-left: 22px;
+  cursor: pointer;
 }
 
 .service-options:not(:last-child) {
   border-bottom: 1px solid var(--darkblue-background);
 }
 
-.service-option-active {
+.service-options-active {
   display: block;
   color: var(--basic-darkblue);
   background-color: var(--basic-white);
@@ -1011,7 +1011,7 @@ fieldset {
   color: var(--basic-white);
 }
 
-.service-options:active {
+.service-options-active {
   color: var(--basic-darkblue);
   background-color: var(--basic-white);
 }
@@ -1045,9 +1045,10 @@ fieldset {
   position: relative;
   max-width: 620px;
   min-height: 280px;
-} 
+}
 
 .service-delivery-submenu {
+  display: none;
   padding-left: 77px;
   background-image: url("..//img/delivery-car.png");
   background-repeat: no-repeat;
@@ -1070,6 +1071,10 @@ fieldset {
   background-position: 100% 108%;
 }
 
+.service-slide-active {
+  display: block;
+}
+
 .service-credit-submenu p {
   margin-bottom: 25px;
 }
@@ -1084,7 +1089,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
-  padding-bottom: 65px;
+  padding-bottom: 70px;
 }
 
 .about-company,
@@ -2118,12 +2123,15 @@ input::-webkit-inner-spin-button {
 
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-map iframe {
@@ -2254,6 +2262,24 @@ input::-webkit-inner-spin-button {
 
 /* Animations */
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2269,6 +2295,29 @@ input::-webkit-inner-spin-button {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 

@@ -1,9 +1,13 @@
 /* Слайдер
-*/
+ */
 var slides = document.querySelectorAll(".slider-item");
 
 var leftBtn = document.querySelector(".first-slide-btn");
 var rightBtn = document.querySelector(".second-slide-btn");
+
+var leftArrow = document.querySelector(".slider-arrow-left");
+var rightArrow = document.querySelector(".slider-arrow-right");
+
 var currentSlide = 0;
 
 if (rightBtn) {
@@ -24,23 +28,113 @@ if (leftBtn) {
   })
 }
 
+if (rightArrow) {
+  rightArrow.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    slides[0].classList.remove("slide-current");
+    slides[1].classList.add("slide-current");
+    currentSlide = 1;
+  })
+}
+
+if (leftArrow) {
+  leftArrow.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    slides[1].classList.remove("slide-current");
+    slides[0].classList.add("slide-current");
+    currentSlide = 0;
+  })
+}
+
 if (slides) {
-  function setNextSlide () {
+  function setNextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
   }
-  function setPrevSlide () {
+
+  function setPrevSlide() {
     currentSlide = Math.abs((currentSlide - 1) % slides.length);
   }
 }
-/* Сервисы
-*/
-var deliveryCheck = document.getElementById("delivery");
-var warrantyCheck = document.getElementById("warrranty");
-var creditCheck = document.getElementById("credit");
 
-var delivery = document.getElementsByClassName(".service-delivery-submenu");
-var warranty = document.getElementsByClassName(".service-warranty-submenu");
-var credit = document.getElementsByClassName(".service-credit-submenu");
+var leftPin = document.querySelector(".first-slide-btn");
+var rightPin = document.querySelector(".second-slide-btn");
+
+if (rightPin) {
+  rightPin.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    rightPin.classList.add("current");
+    leftPin.classList.remove("current");
+  })
+}
+
+if (leftPin) {
+  leftPin.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    leftPin.classList.add("current");
+    rightPin.classList.remove("current");
+  })
+}
+
+/* Сервисы
+ */
+var serviceOptions = document.querySelectorAll(".service-options");
+
+var pickDelivery = document.querySelector(".pick-delivery");
+var pickWarranty = document.querySelector(".pick-warranty");
+var pickCredit = document.querySelector(".pick-credit");
+
+var delivery = document.querySelector(".service-delivery-submenu");
+var warranty = document.querySelector(".service-warranty-submenu");
+var credit = document.querySelector(".service-credit-submenu");
+
+if (pickDelivery) {
+  pickDelivery.addEventListener("click", function (evt) {
+    if (pickDelivery.classList.contains("service-options-active")) {
+      evt.preventDefault();
+      pickDelivery.classList.remove("service-options-active");
+    } else {
+      pickDelivery.classList.add("service-options-active");
+      pickWarranty.classList.remove("service-options-active");
+      pickCredit.classList.remove("service-options-active");
+      delivery.classList.add("service-slide-active");
+      warranty.classList.remove("service-slide-active");
+      credit.classList.remove("service-slide-active");
+    }
+  })
+}
+
+if (pickWarranty) {
+  pickWarranty.addEventListener("click", function (evt) {
+    if (pickWarranty.classList.contains("service-options-active")) {
+      evt.preventDefault();
+      pickWarranty.classList.remove("service-options-active");
+    } else {
+      pickWarranty.classList.add("service-options-active");
+      pickDelivery.classList.remove("service-options-active");
+      pickCredit.classList.remove("service-options-active");
+      warranty.classList.add("service-slide-active");
+      delivery.classList.remove("service-slide-active");
+      credit.classList.remove("service-slide-active");
+    }
+  })
+}
+
+if (pickCredit) {
+  pickCredit.addEventListener("click", function (evt) {
+    if (pickCredit.classList.contains("service-options-active")) {
+      evt.preventDefault();
+      pickCredit.classList.remove("service-options-active");
+    } else {
+      pickCredit.classList.add("service-options-active");
+      pickDelivery.classList.remove("service-options-active");
+      pickWarranty.classList.remove("service-options-active");
+      credit.classList.add("service-slide-active");
+      delivery.classList.remove("service-slide-active");
+      warranty.classList.remove("service-slide-active");
+    }
+  })
+}
+
 
 
 /* Форма
@@ -62,7 +156,7 @@ if (contactPopup) {
     evt.preventDefault();
     contactPopup.classList.add("modal-show");
     contactName.focus();
-  
+
     if (storage) {
       contactName.value = storageName;
       contactContact.value = storageContact;
@@ -71,13 +165,13 @@ if (contactPopup) {
       contactName.focus();
     }
   });
-  
+
   contactClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     contactPopup.classList.remove("modal-show");
     contactPopup.classList.remove("modal-error");
   });
-  
+
   contactForm.addEventListener("submit", function (evt) {
     if (!contactName.value || !contactContact.value) {
       evt.preventDefault();
@@ -114,7 +208,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 /* Карта
-*/
+ */
 
 var mapLink = document.querySelector(".map-popup");
 
