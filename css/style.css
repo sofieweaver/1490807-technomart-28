@@ -1021,6 +1021,7 @@ fieldset {
   padding: 0;
   background-color: transparent;
   pointer-events: none;
+  cursor: pointer;
 }
 
 .service-option-submenu {

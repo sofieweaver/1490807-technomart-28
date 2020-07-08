@@ -89,7 +89,7 @@ var credit = document.querySelector(".service-credit-submenu");
 
 if (pickDelivery) {
   pickDelivery.addEventListener("click", function (evt) {
-    if (pickDelivery.classList.contains("service-options-active")) {
+    if (pickWarranty.classList.contains("service-options-active") & pickCredit.classList.contains("service-options-active") ) {
       evt.preventDefault();
       pickDelivery.classList.remove("service-options-active");
     } else {
@@ -105,7 +105,7 @@ if (pickDelivery) {
 
 if (pickWarranty) {
   pickWarranty.addEventListener("click", function (evt) {
-    if (pickWarranty.classList.contains("service-options-active")) {
+    if (pickDelivery.classList.contains("service-options-active") & pickCredit.classList.contains("service-options-active") ) {
       evt.preventDefault();
       pickWarranty.classList.remove("service-options-active");
     } else {
@@ -121,7 +121,7 @@ if (pickWarranty) {
 
 if (pickCredit) {
   pickCredit.addEventListener("click", function (evt) {
-    if (pickCredit.classList.contains("service-options-active")) {
+    if (pickDelivery.classList.contains("service-options-active") & pickWarranty.classList.contains("service-options-active") ) {
       evt.preventDefault();
       pickCredit.classList.remove("service-options-active");
     } else {
