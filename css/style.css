@@ -2149,7 +2149,6 @@ input::-webkit-inner-spin-button {
 }
 
 .contact-us-modal {
-
   width: 620px;
   height: 423px;
   margin: 0 auto;
@@ -2216,22 +2215,9 @@ input::-webkit-inner-spin-button {
   margin-bottom: 30px;
 }
 
-.place-order-container {
-  background-color: var(--modal-color);
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.place-order-btn {
-  padding: 11px 198px 9px 198px;
-  margin: 0 auto;
-}
-
 .item-added {
   width: 620px;
-  height: 282px;
+  height: 275px;
   margin: 0 auto;
 }
 
@@ -2253,6 +2239,19 @@ input::-webkit-inner-spin-button {
   background-image: url("..//img/icon-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.place-order-container {
+  background-color: var(--modal-color);
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-order-btn {
+  padding: 11px 198px 9px 198px;
+  margin: 0 auto;
 }
 
 .order-submission-btn {
@@ -2351,4 +2350,12 @@ input::-webkit-inner-spin-button {
   80% {
     transform: translateX(10px);
   }
+}
+.example {
+    display: grid;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    background: linear-gradient(to bottom, white, black);
 }
