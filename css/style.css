@@ -1010,12 +1010,6 @@ fieldset {
   border-bottom: 1px solid var(--darkblue-background);
 }
 
-.service-options-active {
-  display: block;
-  color: var(--basic-darkblue);
-  background-color: var(--basic-white);
-}
-
 .service-options:hover,
 .service-options:focus-within {
   background-color: var(--darkblue-background);
@@ -1030,7 +1024,6 @@ fieldset {
 .service-option {
   padding: 0;
   background-color: transparent;
-  pointer-events: none;
   cursor: pointer;
 }
 
