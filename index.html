@@ -60,7 +60,7 @@
             <h2 class="visually-hidden">Кабинет пользователя</h2>
             <ul class="user-profile">
               <li class="user-profile-buttons">
-                <a class="login-button" href="blank.html">
+                <a class="login-button" href="blank.html" tabindex="0">
                   <svg class="login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17">
                     <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
                     <path
@@ -127,8 +127,8 @@
       <div class="slider">
         <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-1" checked>
         <input class="visually-hidden slider-control" type="radio" name="slider-group" id="slider-2">
-        <button type="button" class="slider-arrow-left"></button>
-        <button type="button" class="slider-arrow-right"></button>
+        <button type="button" class="slider-arrow-left" aria-label="Кнопка слайдера влево"></button>
+        <button type="button" class="slider-arrow-right" aria-label="Кнопка слайдера вправо"></button>
         <ul class="slider-content">
           <li class="slider-item slide-current">
             <div class="slide-wrapper-1">
@@ -179,7 +179,7 @@
       </div>
 
       <ul class="popular-list">
-        <li class="catalog-item">
+        <li class="catalog-item" tabindex="0">
           <div class="item-img">
             <img src="img/bosch-bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           </div>
@@ -189,12 +189,12 @@
           <p class="old-price">32500 Р.</p>
           <p class="current-price">25500 Р.</p>
           <div class="catalog-item-actions">
-            <a class="cart-button cart-popup-btn">Купить</a>
-            <a class="bookmark-button">В закладки</a>
+            <a class="cart-button" tabindex="0">Купить</a>
+            <a class="bookmark-button" tabindex="0">В закладки</a>
           </div>
         </li>
 
-        <li class="catalog-item catalog-new-item">
+        <li class="catalog-item catalog-new-item" tabindex="0">
           <div class="item-img">
             <img src="img/bosch-bfg2000-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           </div>
@@ -204,12 +204,12 @@
           <p class="old-price">22500 Р.</p>
           <p class="current-price">15500 Р.</p>
           <div class="catalog-item-actions">
-            <a class="cart-button">Купить</a>
-            <a class="bookmark-button">В закладки</a>
+            <a class="cart-button" tabindex="0">Купить</a>
+            <a class="bookmark-button" tabindex="0">В закладки</a>
           </div>
         </li>
 
-        <li class="catalog-item">
+        <li class="catalog-item" tabindex="0">
           <div class="item-img">
             <img src="img/bosch-bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           </div>
@@ -219,12 +219,12 @@
           <p class="old-price">30500 Р.</p>
           <p class="current-price">25500 Р.</p>
           <div class="catalog-item-actions">
-            <a class="cart-button">Купить</a>
-            <a class="bookmark-button">В закладки</a>
+            <a class="cart-button" tabindex="0">Купить</a>
+            <a class="bookmark-button" tabindex="0">В закладки</a>
           </div>
         </li>
 
-        <li class="catalog-item catalog-new-item">
+        <li class="catalog-item catalog-new-item" tabindex="0">
           <div class="item-img">
             <img src="img/bosch-bfg2000-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
           </div>
@@ -234,8 +234,8 @@
           <p class="old-price"></p>
           <p class="current-price">12500 Р.</p>
           <div class="catalog-item-actions">
-            <a class="cart-button">Купить</a>
-            <a class="bookmark-button">В закладки</a>
+            <a class="cart-button" tabindex="0">Купить</a>
+            <a class="bookmark-button" tabindex="0">В закладки</a>
           </div>
         </li>
 
@@ -507,7 +507,7 @@
         <div class="feedback-container">
           <p class="footer-feedback">Обратная связь: <span tabindex="0">mail@htmlacademy.ru</span></p>
           <p class="footer-link">Разработано —
-            <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
